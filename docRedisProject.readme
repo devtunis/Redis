@@ -1,0 +1,9 @@
+# yarn add -D typescript @types/node
+
+yarn add — adds packages to your project.
+
+-D or --dev — adds these packages as development dependencies (used only during development, not in production).
+
+typescript — the TypeScript language compiler and tools.
+
+@types/node — TypeScript type definitions for Node.js, which provide type information for Node's built-in modules like fs, http, etc., enabling better code completion and error checking.
