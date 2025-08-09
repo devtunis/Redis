@@ -1,4 +1,4 @@
-# yarn add -D typescript @types/node
+1)commande #( yarn add -D typescript @types/node)
 
 yarn add — adds packages to your project.
 
@@ -7,3 +7,6 @@ yarn add — adds packages to your project.
 typescript — the TypeScript language compiler and tools.
 
 @types/node — TypeScript type definitions for Node.js, which provide type information for Node's built-in modules like fs, http, etc., enabling better code completion and error checking.
+
+
+2)commande to install postgresql and thisi stuff #( yarn add @mikro-orm/cli @mikro-orm/core @mikro-orm/postgresql pg)
