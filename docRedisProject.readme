@@ -10,3 +10,21 @@ typescript — the TypeScript language compiler and tools.
 
 
 2)commande to install postgresql and thisi stuff #( yarn add @mikro-orm/cli @mikro-orm/core @mikro-orm/postgresql pg)
+# إعدادات TypeScript لمشروع MikroORM
+
+في هذا المشروع، نستخدم مكتبة [MikroORM](https://mikro-orm.io/) مع TypeScript، وواجهنا مشكلة في الديكوريتور (Decorators) بسبب تحديثات TypeScript 5.x.
+
+---
+
+## الحل في `tsconfig.json`
+
+لضمان عمل MikroORM مع الديكوريتور بشكل صحيح، قمنا بضبط الإعدادات التالية في ملف `tsconfig.json`:
+
+```json
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    // إعدادات أخرى حسب المشروع...
+  }
+}
